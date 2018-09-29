@@ -38,5 +38,8 @@ var navBar = document.querySelector('.navbar');
         navBar.style.borderBottom = '1px solid #7f7f7f';
     })
     
-    
+var escapeButton = document.querySelector('.tasks-btn-wroc');
+    this.addEventListener('click', function(){
+        window.scroll(0, 0);
+    })
 });
