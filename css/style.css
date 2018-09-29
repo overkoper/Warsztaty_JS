@@ -308,3 +308,7 @@ footer p {
 .more {
     display: none;
 }
+
+.navbar {
+    border-bottom: 1px solid red;
+}

@@ -11,7 +11,7 @@ var subMenu = document.querySelector('.dropdown');
     })
 
 var buttons = document.querySelectorAll('.read-more') ;
-//    console.log(buttons[0].previousElementSibling);
+//    console.log(buttons[1]);
     
     
     
@@ -31,4 +31,12 @@ function showHide(){
     for (var i=0; i < buttons.length; i++){
         buttons[i].addEventListener('click', showHide);
     }
+//Zadanie 3
+
+var navBar = document.querySelector('.navbar');
+    window.addEventListener('scroll', function(){
+        navBar.style.borderBottom = '1px solid #7f7f7f';
+    })
+    
+    
 });
