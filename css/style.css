@@ -331,3 +331,11 @@ footer p {
     position:absolute;
     left:80%;
 }
+
+.org {
+    display:none;
+}
+
+.visible {
+    display: inline-block;
+}

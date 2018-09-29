@@ -42,4 +42,19 @@ var escapeButton = document.querySelector('.tasks-btn-wroc');
     this.addEventListener('click', function(){
         window.scroll(0, 0);
     })
+    
+//zadanie 5
+
+var items = document.querySelectorAll('.org');
+var dots = document.querySelectorAll('.dot');
+    
+  
+    for (var i = 0; i < dots.length; i++){
+     dots[i].classList.remove('active');
+    items[i].classList.remove('visible');   
+    }
+      dots[0].addEventListener('click', function(){
+          console.log(dots.classList);
+    })
+    
 });
