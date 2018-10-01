@@ -83,5 +83,36 @@ var up = document.getElementById('up');
         window.scroll(0, 0);
     })
     
-    
+//zadanie 6
+var addButton = document.getElementById('addButton');
+var tasksList = document.getElementById('tasksList');
+var inputField = document.getElementById('inputField');
+    function addTask(){
+    var newTaskContent = document.createElement('li');
+    var newTask = document.createElement('div');
+        newTask.innerHTML = inputField.value;
+        
+        if (inputField.value === ''){
+    var error = document.getElementById('error');
+        error.classList.remove('hidden');
+            
+        }else{       
+    var deleteButton = document.createElement('button');
+        deleteButton.innerHTML = 'Usuń';
+        deleteButton.classList.add('btn', 'delete-btn');
+    var error = document.getElementById('error');
+        error.classList.add('hidden');
+        tasksList.appendChild(newTaskContent);
+        newTaskContent.appendChild(newTask);
+        newTaskContent.appendChild(deleteButton);
+        inputField.value = '';
+    deleteButton.addEventListener('click', function(){
+         this.parentElement.parentNode.removeChild(this.parentElement);
+         error.classList.add('hidden');
+    } )}
+    };
+
+    addButton.addEventListener('click', addTask);    
+
+
 });

@@ -76,23 +76,22 @@
           <p>Podstawą działania jest dobry plan. Wykorzystaj poniższy formularz, żeby wprowadzić pierwsze zadania na swoją listę zadań.</p>
           <div class="list-container">
             <h5>Plan działania</h5>
+            <div id="error" class="error hidden">Wpisz zadanie</div>
             <div class="input-group">
-              <input class="form-control" type="text" placeholder="Tutaj wpisz zadanie do wykonania">
+              <input id="inputField" class="form-control" type="text" placeholder="Tutaj wpisz zadanie do wykonania">
               <span class="input-group-btn">
-                <button class="btn btn-secondary add-task-btn" type="button">
+                <button id="addButton" class="btn btn-secondary add-task-btn" type="button">
                   Dodaj do listy
                 </button>
               </span>
             </div>
-            <ul class="list list-group">
-              <li>przykładowe zadanie do zrobienia</li>
-              <li>przykładowe zadanie do zrobienia</li>
-              <li>przykładowe zadanie do zrobienia</li>
+            <ul id="tasksList" class="list list-group">
             </ul>
           </div>
         </div>
       </div>
     </div>
+    
     <div class="orgs">
       <div class="row">
         <div class="col-sm-6 col-sm-offset-3">

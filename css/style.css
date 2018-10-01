@@ -339,3 +339,16 @@ footer p {
 .visible {
     display: inline-block;
 }
+.delete-btn{
+    color:red;
+}
+.hidden{
+    display: none;
+}
+.error{
+    z-index: 1000;
+    position:relative;
+    color: red;
+    font-size: 12px;
+    
+}
