@@ -37,24 +37,51 @@ var navBar = document.querySelector('.navbar');
     window.addEventListener('scroll', function(){
         navBar.style.borderBottom = '1px solid #7f7f7f';
     })
-    
-var escapeButton = document.querySelector('.tasks-btn-wroc');
-    this.addEventListener('click', function(){
-        window.scroll(0, 0);
-    })
-    
+
 //zadanie 5
 
 var items = document.querySelectorAll('.org');
 var dots = document.querySelectorAll('.dot');
     
   
-    for (var i = 0; i < dots.length; i++){
+      dots[0].addEventListener('click', function(){
+           for (var i = 0; i < dots.length; i++){
      dots[i].classList.remove('active');
     items[i].classList.remove('visible');   
     }
-      dots[0].addEventListener('click', function(){
-          console.log(dots.classList);
+          this.classList.add('active');
+            items[0].classList.add('visible');
     })
+    dots[1].addEventListener('click', function(){
+         for (var i = 0; i < dots.length; i++){
+     dots[i].classList.remove('active');
+    items[i].classList.remove('visible');   
+    }
+          this.classList.add('active');
+            items[1].classList.add('visible');
+    })
+    dots[2].addEventListener('click', function(){
+         for (var i = 0; i < dots.length; i++){
+     dots[i].classList.remove('active');
+    items[i].classList.remove('visible');   
+    }
+          this.classList.add('active');
+            items[2].classList.add('visible');
+    })
+    dots[3].addEventListener('click', function(){
+         for (var i = 0; i < dots.length; i++){
+     dots[i].classList.remove('active');
+    items[i].classList.remove('visible');   
+    }
+          this.classList.add('active');
+            items[3].classList.add('visible');
+    })
+    
+//zadanie 4    
+var up = document.getElementById('up');
+    up.addEventListener('click', function(){
+        window.scroll(0, 0);
+    })
+    
     
 });
